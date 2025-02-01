@@ -24,3 +24,25 @@ public class Main {
     }
 }
 ```
+
+## 1a. BiConsumer
+```java
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.BiConsumer;
+
+public class Main {
+    public static void main(String[] args) {
+        List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
+        List<Integer> ages = Arrays.asList(25, 30, 35);
+
+        BiConsumer<String, Integer> printNameAndAge = (name, age) -> {
+            System.out.println(name + " is " + age + " years old.");
+        };
+
+        for (int i = 0; i < names.size(); i++) {
+            printNameAndAge.accept(names.get(i), ages.get(i));
+        }
+    }
+}
+```
