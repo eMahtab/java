@@ -36,5 +36,7 @@ Java 8 introduced several functional interfaces in the `java.util.function` pack
 
 [BiConsumer](https://github.com/eMahtab/java/tree/main/Java-8/functional-interfaces/BiConsumer)
 
+[Supplier](https://github.com/eMahtab/java/tree/main/Java-8/functional-interfaces/Supplier)
+
 
 
