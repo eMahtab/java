@@ -27,25 +27,21 @@ Java 8 introduced several functional interfaces in the `java.util.function` pack
 ### Example Usage:
 
 ```java
-import java.util.function.*;
+import java.util.function.Function;
 
-public class FunctionalInterfaceExample {
+public class Main {
     public static void main(String[] args) {
-        // Predicate Example
-        Predicate<Integer> isEven = num -> num % 2 == 0;
-        System.out.println(isEven.test(4)); // true
+        // Function to validate and format a phone number
+        Function<String, String> formatPhoneNumber = phone -> {
+            if (phone == null || !phone.matches("\\d{10}")) {
+                throw new IllegalArgumentException("Invalid phone number");
+            }
+            return "+1" + phone; // Add country code
+        };
 
-        // Function Example
-        Function<String, Integer> stringLength = str -> str.length();
-        System.out.println(stringLength.apply("Hello")); // 5
-
-        // Consumer Example
-        Consumer<String> printer = System.out::println;
-        printer.accept("Hello World"); // Prints "Hello World"
-
-        // Supplier Example
-        Supplier<Double> randomNumber = Math::random;
-        System.out.println(randomNumber.get()); // Prints a random number
+        String userInput = "1234567890";
+        String formattedNumber = formatPhoneNumber.apply(userInput);
+        System.out.println(formattedNumber); // Output: +11234567890
     }
 }
-
+```
