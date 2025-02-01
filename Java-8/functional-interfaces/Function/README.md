@@ -1,4 +1,4 @@
-### Using Function for Data Validation and Transformation
+## 1. Using Function for Data Validation and Transformation
 
 We can use Function to validate and transform input data, such as converting user input into a specific format.
 
@@ -22,7 +22,7 @@ public class Main {
 }
 ```
 
-### Using Function for Dynamic Behavior in APIs
+## 2. Using Function for Dynamic Behavior in APIs
 
 APIs can use Function to allow users to pass custom logic for processing data.
 
@@ -42,7 +42,7 @@ public class Main {
 }
 ```
 
-## Stream interface map method takes a Function
+## 3. Stream interface map method takes a Function
 
 !["Map's mapper function"](../images/mapper-function.png?raw=true)
 
@@ -64,7 +64,7 @@ public class Main {
 }
 ```
 
-## Functional Composition
+## 4. Functional Composition
 
 Function supports composition using andThen and compose methods, allowing you to chain multiple functions together.
 
