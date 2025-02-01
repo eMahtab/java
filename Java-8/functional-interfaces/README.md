@@ -24,7 +24,11 @@ Java 8 introduced several functional interfaces in the `java.util.function` pack
 
 
 
-### Example Usage:
+### Examples:
+
+## Using Function for Data Validation and Transformation
+
+We can use Function to validate and transform input data, such as converting user input into a specific format.
 
 ```java
 import java.util.function.Function;
