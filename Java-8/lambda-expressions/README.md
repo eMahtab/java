@@ -60,3 +60,42 @@ public class Main {
     }
 }
 ```
+
+# Some more examples :
+
+```java
+// Before Java 8
+Runnable r1 = new Runnable() {
+    @Override
+    public void run() {
+        System.out.println("Hello World!");
+    }
+};
+
+// With Lambda Expression
+Runnable r2 = () -> System.out.println("Hello World!");
+```
+
+```java
+// Before Java 8
+Comparator<String> c1 = new Comparator<String>() {
+    @Override
+    public int compare(String s1, String s2) {
+        return s1.compareTo(s2);
+    }
+};
+
+// With Lambda Expression
+Comparator<String> c2 = (s1, s2) -> s1.compareTo(s2);
+```
+
+```java
+@FunctionalInterface
+interface MyFunctionalInterface {
+    void execute();
+}
+
+// Using Lambda Expression
+MyFunctionalInterface mfi = () -> System.out.println("Executing...");
+mfi.execute();
+```
