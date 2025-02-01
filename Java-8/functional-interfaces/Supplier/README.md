@@ -4,6 +4,8 @@
 
 ## 1. CompletableFuture.supplyAsync(Supplier)
 
+!["CompletableFuture.supplyAsync"](../images/Supplier/completablefuture-supplier.png?raw=true)
+
 ```java
 import java.util.concurrent.CompletableFuture;
 
