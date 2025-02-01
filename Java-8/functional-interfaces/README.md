@@ -49,3 +49,23 @@ public class Main {
     }
 }
 ```
+
+### Using Function for Dynamic Behavior in APIs
+
+APIs can use Function to allow users to pass custom logic for processing data.
+
+```java
+import java.util.function.Function;
+
+public class Main {
+    public static void main(String[] args) {
+        // API method that accepts a Function for custom processing
+        String result = processInput("hello", input -> input.toUpperCase() + "!");
+        System.out.println(result); // Output: HELLO!
+    }
+
+    public static String processInput(String input, Function<String, String> processor) {
+        return processor.apply(input);
+    }
+}
+```
