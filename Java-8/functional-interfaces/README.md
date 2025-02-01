@@ -2,7 +2,7 @@
 
 **Functional interfaces provide target types for lambda expressions and method references.** 
 
-**Each functional interface has exactlly one abstract method, called the functional method for that functional interface, to which the lambda expression's parameter and return types are matched or adapted.**
+**Each functional interface has exactly one abstract method, called the functional method for that functional interface, to which the lambda expression's parameter and return types are matched or adapted.**
 
 Functional interfaces are introduced in Java 8.
 
