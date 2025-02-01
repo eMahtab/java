@@ -1,6 +1,6 @@
 # Function 
 
-!["Function interface"](../images/function-interface.png?raw=true)
+!["Function interface"](../images/Function/function-interface.png?raw=true)
 
 ## 1. Using Function for Data Validation and Transformation
 
@@ -48,7 +48,7 @@ public class Main {
 
 ## 3. Stream interface map method takes a Function
 
-!["Map's mapper function"](../images/mapper-function.png?raw=true)
+!["Map's mapper function"](../images/Function/mapper-function.png?raw=true)
 
 ```java
 import java.util.Arrays;
