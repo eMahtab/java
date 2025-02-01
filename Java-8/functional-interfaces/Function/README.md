@@ -1,3 +1,6 @@
+
+!["Function interface"](../images/function-interface.png?raw=true)
+
 ## 1. Using Function for Data Validation and Transformation
 
 We can use Function to validate and transform input data, such as converting user input into a specific format.
