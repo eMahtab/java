@@ -69,3 +69,8 @@ public class Main {
     }
 }
 ```
+
+## Stream interface map method takes a Function
+
+!["Map's mapper function"](images/mapper-function.png?raw=true)
+
