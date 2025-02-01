@@ -51,13 +51,13 @@ public class Main {
         Consumer<User> activateUser = user -> user.isActive = true;
 
         // Activate all inactive users
-        users.forEach(user -> {
+        users.stream().forEach(user -> {
             if (!user.isActive) {
                 activateUser.accept(user);
             }
         });
 
-        users.forEach(System.out::println);
+        users.stream().forEach(System.out::println);
     }
 }
 ```
