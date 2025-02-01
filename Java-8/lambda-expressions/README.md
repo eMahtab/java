@@ -1,5 +1,8 @@
 # Lambda Expressions
 
+Java 8 introduced lambda expressions, which are a significant feature enabling functional programming in Java. 
+
+Lambda expressions **provide a clear and concise way to represent instances of functional interfaces** (interfaces with a single abstract method) using an expression. They help in writing more readable and maintainable code
 
 ## Step 1 : Old way without Lambda Expression
 
