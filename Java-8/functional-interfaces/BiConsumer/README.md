@@ -4,6 +4,8 @@
 
 ## 1. Iterating Over a Map
 
+!["Map forEach BiConsumer"](../images/BiConsumer/map-forEach-biconsumer.png?raw=true)
+
 A common use case for BiConsumer is iterating over the entries of a Map. The forEach method of Map takes a BiConsumer as an argument, where the two inputs are the key and value of each entry.
 
 ```java
