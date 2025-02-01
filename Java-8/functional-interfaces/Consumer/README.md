@@ -20,7 +20,9 @@ public class Main {
 }
 ```
 
-## 1a. Updating records using a Consumer
+## 1a. java.util.stream.Stream interface forEach() takes a Consumer, Updating records using a Consumer
+
+!["stream forEach Consumer"](../images/Consumer/stream-forEach.png?raw=true)
 
 ```java
 import java.util.function.Consumer;
