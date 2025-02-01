@@ -14,33 +14,34 @@ Java 8 introduced several functional interfaces in the `java.util.function` pack
 |---------------------|-------------|----------|
 | **Function<T, R>** | Represents a function that accepts one argument and produces a result (`apply(T t)`). | Used for transformation (e.g., converting a `String` to `Integer`). |
 | **BiFunction<T, U, R>** | Represents a function that accepts two arguments and produces a result (`apply(T, U)`). | Used for operations requiring two inputs, like combining data. |
-| **Predicate<T>** | Represents a boolean-valued function of one argument. It contains a `test(T t)` method. | Used for filtering data (e.g., in Streams and Collections). |
-| **BiPredicate<T, U>** | Represents a boolean-valued function that takes two arguments (`test(T, U)`). | Used for filtering and comparisons involving two parameters. |
 | **Consumer<T>** | Represents an operation that accepts a single argument and returns no result (`accept(T t)`). | Used for performing actions like logging or printing data. |
 | **BiConsumer<T, U>** | Represents an operation that takes two arguments and returns no result (`accept(T, U)`). | Used for actions like updating two values or logging two inputs. |
-| **Supplier<T>** | Represents a function that provides a result of type `T` (`get()`). | Used for lazy initialization and object supply. |
+| **Predicate<T>** | Represents a boolean-valued function of one argument. It contains a `test(T t)` method. | Used for filtering data (e.g., in Streams and Collections). |
+| **BiPredicate<T, U>** | Represents a boolean-valued function that takes two arguments (`test(T, U)`). | Used for filtering and comparisons involving two parameters. |
 | **UnaryOperator<T>** | A specialized `Function<T, T>` that operates on a single operand of type `T`. | Used for transformations where input and output types are the same. |
 | **BinaryOperator<T>** | A specialized `BiFunction<T, T, T>` that operates on two operands of type `T`. | Used for operations like addition, multiplication, and string concatenation. |
-
+| **Supplier<T>** | Represents a function that provides a result of type `T` (`get()`). | Used for lazy initialization and object supply. |
 
 
 ## Examples:
 
-[Function](https://github.com/eMahtab/java/tree/main/Java-8/functional-interfaces/Function)  
-
-[Consumer](https://github.com/eMahtab/java/tree/main/Java-8/functional-interfaces/Consumer)
+[Function](https://github.com/eMahtab/java/tree/main/Java-8/functional-interfaces/Function)
 
 [BiFunction](https://github.com/eMahtab/java/tree/main/Java-8/functional-interfaces/BiFunction)
 
-[Predicate](https://github.com/eMahtab/java/tree/main/Java-8/functional-interfaces/Predicate)
+[Consumer](https://github.com/eMahtab/java/tree/main/Java-8/functional-interfaces/Consumer)
 
 [BiConsumer](https://github.com/eMahtab/java/tree/main/Java-8/functional-interfaces/BiConsumer)
 
-[Supplier](https://github.com/eMahtab/java/tree/main/Java-8/functional-interfaces/Supplier)
+[Predicate](https://github.com/eMahtab/java/tree/main/Java-8/functional-interfaces/Predicate)
+
+[BiPredicate](https://github.com/eMahtab/java/tree/main/Java-8/functional-interfaces/BiPredicate)
 
 [UnaryOperator](https://github.com/eMahtab/java/tree/main/Java-8/functional-interfaces/UnaryOperator)
 
 [BinaryOperator](https://github.com/eMahtab/java/tree/main/Java-8/functional-interfaces/BinaryOperator)
+
+[Supplier](https://github.com/eMahtab/java/tree/main/Java-8/functional-interfaces/Supplier)
 
 
 
