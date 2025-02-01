@@ -44,3 +44,16 @@ public class Main {
     }
 }
 ```
+
+## Step 2 : Using Lambda Expression
+```java
+import java.util.Arrays;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        List<String> list = Arrays.asList("a", "b", "c");
+        list.forEach((element) -> System.out.print(element + " "));
+    }
+}
+```
