@@ -74,3 +74,20 @@ public class Main {
 
 !["Map's mapper function"](images/mapper-function.png?raw=true)
 
+```java
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.Function;
+
+public class Main {
+    public static void main(String[] args) {
+        List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
+        // Function to square a number
+        Function<Integer, Integer> square = x -> x * x;
+
+        numbers.stream()
+                .map(square)
+                .forEach(num -> System.out.print(num   + " ")); // Output: 1 4 9 16 25 
+    }
+}
+```
