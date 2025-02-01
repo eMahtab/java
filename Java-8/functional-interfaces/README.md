@@ -38,5 +38,7 @@ Java 8 introduced several functional interfaces in the `java.util.function` pack
 
 [Supplier](https://github.com/eMahtab/java/tree/main/Java-8/functional-interfaces/Supplier)
 
+[UnaryOperator](https://github.com/eMahtab/java/tree/main/Java-8/functional-interfaces/UnaryOperator)
+
 
 
