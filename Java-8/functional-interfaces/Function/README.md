@@ -63,3 +63,28 @@ public class Main {
     }
 }
 ```
+
+## Functional Composition
+
+Function supports composition using andThen and compose methods, allowing you to chain multiple functions together.
+
+```java
+import java.util.function.Function;
+
+public class Main {
+    public static void main(String[] args) {
+        Function<Integer, Integer> multiplyByTwo = x -> x * 2;
+        Function<Integer, Integer> addThree = x -> x + 3;
+
+        // Using andThen: multiply by 2, then add 3
+        Function<Integer, Integer> multiplyAndAdd = multiplyByTwo.andThen(addThree);
+        int result1 = multiplyAndAdd.apply(5);
+        System.out.println("andThen result: " + result1); // Output: 13
+
+        // Using compose: add 3, then multiply by 2
+        Function<Integer, Integer> addAndMultiply = multiplyByTwo.compose(addThree);
+        int result2 = addAndMultiply.apply(5);
+        System.out.println("compose result: " + result2); // Output: 16
+    }
+}
+```
