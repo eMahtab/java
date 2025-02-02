@@ -1,8 +1,8 @@
 # Method References
 
-Method references in Java provide a way to refer to methods without invoking them explicitly. 
+Many a times, a lambda expression does nothing but call an existing method. In those cases, it's often clearer to refer to the existing method by name. Method references enable you to do this; they are compact, easy-to-read lambda expressions for methods that already have a name.
 
-They are a shorthand notation for lambda expressions and improve code readability. 
+**Method References are a shorthand notation for lambda expressions and improve code readability.**
 
 Method references use :: operator and come in different types.
 
