@@ -76,6 +76,26 @@ public class Main {
 ```
 
 
+# Reference to an Instance Method (of a particular object)
+
+```java
+import java.util.Arrays;
+import java.util.List;
+
+public class Main {
+    public void printMessage(String message) {
+        System.out.println("Message: " + message);
+    }
+
+    public static void main(String[] args) {
+        Main instance = new Main();
+        List<String> messages = Arrays.asList("Hello", "World", "Java 8");
+
+        // Using method reference to call printMessage on each element
+        messages.forEach(instance::printMessage);
+    }
+}
+```
 
 
 
