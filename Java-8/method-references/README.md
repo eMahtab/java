@@ -6,6 +6,16 @@ They are a shorthand notation for lambda expressions and improve code readabilit
 
 Method references use :: operator and come in different types.
 
+# Kinds of Method References 
+
+| **Kind** | **Syntax** | **Examples** |
+|----------|-----------|-------------|
+| **Reference to a static method** | `ContainingClass::staticMethodName` | `Person::compareByAge`<br>`MethodReferencesExamples::appendStrings` |
+| **Reference to an instance method of a particular object** | `containingObject::instanceMethodName` | `myComparisonProvider::compareByName`<br>`myApp::appendStrings2` |
+| **Reference to an instance method of an arbitrary object of a particular type** | `ContainingType::methodName` | `String::compareToIgnoreCase`<br>`String::concat` |
+| **Reference to a constructor** | `ClassName::new` | `HashSet::new` |
+
+
 ## Reference to a Static Method
 
 ```java
