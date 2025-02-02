@@ -115,6 +115,48 @@ public class Main {
 }
 ```
 
+# Reference to a Constructor
+
+```java
+import java.util.List;
+import java.util.stream.Collectors;
+
+class Employee {
+    String name;
+    int age;
+    Employee(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+
+class EmployeeDTO {
+    String name;
+    EmployeeDTO(Employee emp) {
+        this.name = emp.name;
+    }
+    public String toString() {
+        return "EmployeeDTO{name='" + name + "'}";
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        List<Employee> employees = List.of(
+            new Employee("Alice", 30),
+            new Employee("Bob", 25)
+        );
+
+        // Using constructor reference instead of emp -> new EmployeeDTO(emp)
+        List<EmployeeDTO> employeeDTOs = employees.stream()
+                .map(EmployeeDTO::new)
+                .collect(Collectors.toList());
+
+        System.out.println(employeeDTOs);
+        // Output: [EmployeeDTO{name='Alice'}, EmployeeDTO{name='Bob'}]
+    }
+}
+```
 
 
 
