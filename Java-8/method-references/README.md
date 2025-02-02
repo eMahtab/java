@@ -16,7 +16,7 @@ Method references use :: operator and come in different types.
 | **Reference to a constructor** | `ClassName::new` | `HashSet::new` |
 
 
-## 1. Reference to a Static Method
+# 1. Reference to a Static Method
 
 ```java
 import java.util.Arrays;
@@ -62,7 +62,7 @@ public class Main {
 }
 ```
 
-## 2. Reference to an Instance Method (of an arbitrary object of a particular type)
+# 2. Reference to an Instance Method (of an arbitrary object of a particular type)
 
 ```java
 import java.util.Arrays;
