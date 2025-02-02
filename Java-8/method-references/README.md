@@ -13,17 +13,20 @@ Method references use :: operator and come in different types.
 ```java
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
-        List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
+        List<String> cities = Arrays.asList("Shanghai", "Xian", "Beijing", "Shenzhen");
 
         // Using Lambda
-        // names.forEach(name -> System.out.println(name));
+        // cities.forEach(city -> System.out.println(city));
 
         // Using Method References
-        names.forEach(System.out::println);
-        names.stream().map(String::length).forEach(System.out::println);
+        cities.forEach(System.out::println);
+        cities.stream().map(String::length).forEach(System.out::println);
+        cities.stream().sorted(String::compareToIgnoreCase).forEach(System.out::println);
+        List<String> lowerCased = cities.stream().map(String::toLowerCase).collect(Collectors.toList());
     }
 }
 ```
