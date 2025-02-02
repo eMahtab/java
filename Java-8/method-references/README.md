@@ -11,8 +11,8 @@ Method references use :: operator and come in different types.
 | **Kind** | **Syntax** | **Examples** |
 |----------|-----------|-------------|
 | **Reference to a static method** | `ContainingClass::staticMethodName` | `Person::compareByAge`<br>`MethodReferencesExamples::appendStrings` |
-| **Reference to an instance method of a particular object** | `containingObject::instanceMethodName` | `myComparisonProvider::compareByName`<br>`myApp::appendStrings2` |
 | **Reference to an instance method of an arbitrary object of a particular type** | `ContainingType::methodName` | `String::compareToIgnoreCase`<br>`String::concat` |
+| **Reference to an instance method of a particular object** | `containingObject::instanceMethodName` | `myComparisonProvider::compareByName`<br>`myApp::appendStrings2` |
 | **Reference to a constructor** | `ClassName::new` | `HashSet::new` |
 
 
