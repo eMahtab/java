@@ -8,6 +8,7 @@ Method references use :: operator and come in different types.
 
 
 
+## Reference to an Instance Method (of an arbitrary object of a particular type)
 
 ```java
 import java.util.Arrays;
