@@ -6,7 +6,7 @@ They are a shorthand notation for lambda expressions and improve code readabilit
 
 Method references use :: operator and come in different types.
 
-## 
+## Reference to a Static Method
 
 ```java
 import java.util.Arrays;
