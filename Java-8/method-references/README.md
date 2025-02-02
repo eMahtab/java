@@ -9,6 +9,24 @@ Method references use :: operator and come in different types.
 
 
 
+```java
+import java.util.Arrays;
+import java.util.List;
+
+public class Main {
+    public static void main(String[] args) {
+        List<String> names = Arrays.asList("Alice", "Bob", "Charlie");
+
+        // Using Lambda
+        // names.forEach(name -> System.out.println(name));
+
+        // Using Method References
+        names.forEach(System.out::println);
+        names.stream().map(String::length).forEach(System.out::println);
+    }
+}
+```
+
 
 
 
