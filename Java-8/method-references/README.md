@@ -97,6 +97,24 @@ public class Main {
 }
 ```
 
+```java
+import java.util.function.Predicate;
+
+public class Main {
+    public boolean isLongerThanFive(String str) {
+        return str.length() > 5;
+    }
+
+    public static void main(String[] args) {
+        Main obj = new Main();
+        Predicate<String> predicate = obj::isLongerThanFive;
+
+        System.out.println(predicate.test("Hello")); // false
+        System.out.println(predicate.test("MethodReference")); // true
+    }
+}
+```
+
 
 
 
