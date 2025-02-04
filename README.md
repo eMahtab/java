@@ -10,7 +10,5 @@
 
 [Java 12](https://github.com/eMahtab/java/tree/main/Java-12)
 
-[Java 13](https://github.com/eMahtab/java/tree/main/Java-13)
-
 [Java 14](https://github.com/eMahtab/java/tree/main/Java-14)
 
