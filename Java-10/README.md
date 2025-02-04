@@ -1,6 +1,6 @@
 # JDK 10 (Feature Release)
 
-In JDK 10 and later, you can declare local variables with non-null initializers with the var identifier, which can help you write code that’s easier to read.
+In JDK 10, you can declare local variables **(only local variables)** with non-null initializers with the var identifier, which can help you write code that’s easier to read.
 
 ## Local Variable Type Inference
 
