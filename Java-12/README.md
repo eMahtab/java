@@ -1,5 +1,6 @@
 # JDK 12
 
+## switch expressions (Preview)
 JDk 12 introduced **switch expressions** which introduces a more concise and expressive way to use switch statements.
 
 
