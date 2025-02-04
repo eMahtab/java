@@ -19,3 +19,5 @@ var bytes = Files.readAllBytes(path);  // infers bytes[]
 # References :
 
 https://docs.oracle.com/en/java/javase/17/language/local-variable-type-inference.html
+
+https://openjdk.org/projects/amber/guides/lvti-style-guide
