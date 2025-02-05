@@ -48,6 +48,16 @@ Before Java 8, utility methods related to an interface were often placed in sepa
 Static methods in interfaces allow you to define utility methods directly within the interface, making the code more organized and intuitive.
 
 
+## Key Points to Remember:
+
+- Static methods in interfaces are public by default and cannot be private or protected.
+
+- They cannot be overridden by implementing classes or sub-interfaces.
+
+- They are called using the interface name (e.g., InterfaceName.staticMethod()).
+
+- They are useful for utility methods, factory methods, and encapsulating interface-specific logic.
+
 ```java
 Optional.empty()
 Optional.of()
