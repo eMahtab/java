@@ -12,7 +12,7 @@ Default methods allow library designers to add new functionality to interfaces w
 
 - They are inherited by sub-interfaces and implementing classes.
 
-e.g. Comparator interface has been enhanced with default methods, Iterable interface (which is extended by Collection interface) has been enhanced with default forEach method.
+e.g. Iterable interface (which is extended by Collection interface) has been enhanced with default forEach() method. Collection interface has been enhanced with default stream() and parallelStream()methods.
 
 ```java
 public interface Iterable<T>{
@@ -31,6 +31,10 @@ public interface Iterable<T>{
 public interface Collection<E> extends Iterable<E> {
     default Stream<E> stream() {
         return StreamSupport.stream(spliterator(), false);
+    }
+
+    default Stream<E> parallelStream() {
+        return StreamSupport.stream(spliterator(), true);
     }
 
     ...
