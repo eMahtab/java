@@ -40,3 +40,25 @@ public interface Collection<E> extends Iterable<E> {
     ...
 }    
 ```
+
+## static methods
+
+Before Java 8, utility methods related to an interface were often placed in separate utility classes (e.g., Collections for the Collection interface).
+
+Static methods in interfaces allow you to define utility methods directly within the interface, making the code more organized and intuitive.
+
+
+```java
+Optional.empty()
+Optional.of()
+Optional.ofNullable()
+
+```
+
+Below are some of the static methods introduced in JDK 9 in collection interfaces
+
+```java
+List.of()
+Set.of()
+Map.of()
+```
