@@ -26,3 +26,13 @@ public interface Iterable<T>{
    ...
 }
 ```
+
+```java
+public interface Collection<E> extends Iterable<E> {
+    default Stream<E> stream() {
+        return StreamSupport.stream(spliterator(), false);
+    }
+
+    ...
+}    
+```
